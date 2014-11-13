@@ -1,0 +1,13 @@
+ZSH=~/.oh-my-zsh/
+
+# theme
+ZSH_THEME="../custom/themes/robbl"
+
+# plugins
+plugins=( history-substring-search osx )
+
+source $ZSH/oh-my-zsh.sh
+source $ZSH/custom/robbl.zsh
+
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/usr/X11/bin:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
+
