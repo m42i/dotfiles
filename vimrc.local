@@ -1,0 +1,14 @@
+colorscheme zenburn
+set foldmethod=indent
+
+" Indent on a new line, depending on the previous
+set autoindent
+" Indent closeing braces
+set smartindent
+
+" neoc completion with cache
+let g:neocomplcache_enable_at_startup = 1
+
+" Softtabs, 4 spaces
+set tabstop=4
+set shiftwidth=4
