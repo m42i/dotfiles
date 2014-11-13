@@ -1,0 +1,11 @@
+[core]
+  pager = cat
+[include]
+  tool = gvimdiff2
+[user]
+  name = m42i
+  email = mfourtytwoi@gmail.com
+[filter "spacetab"]
+[filter "space2tab"]
+  clean = gunexpand -t 4 --first-only
+  smudge = cat
