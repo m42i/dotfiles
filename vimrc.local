@@ -12,3 +12,5 @@ let g:neocomplcache_enable_at_startup = 1
 " Softtabs, 4 spaces
 set tabstop=4
 set shiftwidth=4
+
+autocmd BufRead,BufNewFile *.tgs set filetype=tgs
