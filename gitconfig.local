@@ -1,5 +1,9 @@
 [core]
   pager = cat
+[user]
+  name = Mforty Twois
+  email = mfortytwoi@gmail.com
+  logallrefupdate = true
 [include]
   tool = gvimdiff2
 [user]
@@ -9,3 +13,6 @@
 [filter "space2tab"]
   clean = gunexpand -t 4 --first-only
   smudge = cat
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
