@@ -1,7 +1,9 @@
 #compdef ag
 
 if (( CURRENT == 2 )); then
-  compadd $(cut -f 1 tmp/tags .git/tags 2>/dev/null)
+  if [[ -a tmp/tags ]]; then
+    compadd $(cut -f 1 tmp/tags | uniq)
+  fi
 else;
   _files
 fi

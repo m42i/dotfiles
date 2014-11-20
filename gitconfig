@@ -29,3 +29,6 @@
   prune = true
 [include]
   path = ~/.gitconfig.local
+[user]
+	email = mfortytwoi@gmail.com
+	name = m42i

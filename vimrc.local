@@ -13,4 +13,12 @@ let g:neocomplcache_enable_at_startup = 1
 set tabstop=4
 set shiftwidth=4
 
+" Disable auto line break]
+set textwidth=0
+
+" Highlight the 80t character of each line
+set colorcolumn=80
+
+
+" TaggerScript syntax
 autocmd BufRead,BufNewFile *.tgs set filetype=tgs

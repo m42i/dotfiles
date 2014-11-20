@@ -7,12 +7,12 @@ plugins=( history-substring-search osx )
 git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null)
   if [[ -n $ref ]]; then
-    echo "[%{$fg_bold[green]%}${ref#refs/heads/}%{$reset_color%}]"
+    echo "[%{$fg_bold[green]%}${ref#refs/heads/}%{$reset_color%}] "
   fi
 }
 
 # source $ZSH/oh-my-zsh.sh
-export PS1='$(git_prompt_info) ${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%} \$ '
+export PS1='$(git_prompt_info)${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%} \$ '
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/usr/X11/bin:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin:/usr/local/opt/gettext/bin
 
